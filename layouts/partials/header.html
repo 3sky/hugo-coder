@@ -4,9 +4,6 @@
       {{ .Site.Title }}
     </a>
     {{ if or .Site.Menus.main .Site.IsMultiLingual }}
-      <span id="dark-mode-toggle" class="float-right">
-        <i class="fas fa-adjust fa-fw"></i>
-      </span>
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
         <i class="fas fa-bars fa-fw"></i>
@@ -36,9 +33,6 @@
             {{ end }}
           {{ end }}
         {{ end }}
-        <li class="navigation-item separator">
-          <span>|</span>
-        </li>
       </ul>
     {{ end }}
   </section>
